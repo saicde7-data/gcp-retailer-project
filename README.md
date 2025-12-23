@@ -4,7 +4,27 @@ This guide outlines an approach to implementing CI/CD in Cloud Composer using Cl
 
 File Layout
 
-. ├── dags │ ├── bq_dag.py │ ├── pyspark_dag.py ├── data │ ├── BQ │ │ ├── bronzeTable.sql │ │ ├── silverTable.sql │ │ ├── goldTable.sql │ ├── DBs │ │ ├── retailerdb.sql │ │ ├── supplierdb.sql │ ├── INGESTION │ │ ├── customerReviews_API.py │ │ ├── retailerMysqlToLanding.py │ │ ├── supplierMysqlToLanding.py ├── utils │ ├── add_dags_to_composer.py │ ├── requirements.txt ├── cloudbuild.yaml ├── README.md
+.
+├── dags
+│   ├── bq_dag.py
+│   ├── pyspark_dag.py
+├── data
+│   ├── BQ
+│   │   ├── bronzeTable.sql
+│   │   ├── silverTable.sql
+│   │   ├── goldTable.sql
+│   ├── DBs
+│   │   ├── retailerdb.sql
+│   │   ├── supplierdb.sql
+│   ├── INGESTION
+│   │   ├── customerReviews_API.py
+│   │   ├── retailerMysqlToLanding.py
+│   │   ├── supplierMysqlToLanding.py
+├── utils
+│   ├── add_dags_to_composer.py
+│   ├── requirements.txt
+├── cloudbuild.yaml
+├── README.md
 
 📂 Directory Structure Explanation
 
@@ -82,4 +102,5 @@ Verify DAG Execution
 
 Check if the new DAGs and updates behave as expected in Cloud Composer.
 
-This setup ensures a seamless CI/CD pipeline for managing workflows in Cloud Composer with Cloud Build integration. 
+This setup ensures a seamless CI/CD pipeline for managing workflows in Cloud Composer with Cloud Build integration. 🚀
+
